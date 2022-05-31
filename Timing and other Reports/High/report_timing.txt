@@ -1,0 +1,85 @@
+Warning: Design 'router' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : router
+Version: S-2021.06-SP1
+Date   : Mon May  2 00:55:42 2022
+****************************************
+
+Operating Conditions: BCCOM   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: packet_valid_i
+              (input port clocked by clk1)
+  Endpoint: write_inst/cs_reg[1]
+            (rising edge-triggered flip-flop clocked by clk1)
+  Path Group: clk1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk1 (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     2.00       2.00 r
+  packet_valid_i (in)                      0.00       2.00 r
+  write_inst/packet_valid (write)          0.00       2.00 r
+  write_inst/U21/Z (B4I)                   0.08       2.08 f
+  write_inst/U28/Z (AO4)                   0.73       2.81 r
+  write_inst/U29/Z (AO1P)                  0.18       2.99 f
+  write_inst/U30/Z (IVA)                   0.16       3.15 r
+  write_inst/cs_reg[1]/D (FD2)             0.00       3.15 r
+  data arrival time                                   3.15
+
+  clock clk1 (rise edge)                   4.00       4.00
+  clock network delay (ideal)              0.00       4.00
+  write_inst/cs_reg[1]/CP (FD2)            0.00       4.00 r
+  library setup time                      -0.85       3.15
+  data required time                                  3.15
+  -----------------------------------------------------------
+  data required time                                  3.15
+  data arrival time                                  -3.15
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: read_inst/packet_counter_reg[5]
+              (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: read_inst/packet_counter_reg[0]
+            (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk2 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_inst/packet_counter_reg[5]/CP (FD2)                0.00       0.00 r
+  read_inst/packet_counter_reg[5]/QN (FD2)                0.96       0.96 f
+  read_inst/U107/Z (ND4)                                  0.47       1.43 r
+  read_inst/U84/Z (NR4)                                   0.19       1.62 f
+  read_inst/U83/Z (ND2)                                   0.39       2.01 r
+  read_inst/U81/Z (ND2)                                   0.11       2.12 f
+  read_inst/U8/Z (AO3)                                    1.46       3.58 r
+  read_inst/U80/Z (AN3)                                   0.95       4.53 r
+  read_inst/U61/Z (ND2)                                   0.11       4.64 f
+  read_inst/U59/Z (AO3)                                   0.40       5.04 r
+  read_inst/packet_counter_reg[0]/D (FD2)                 0.00       5.04 r
+  data arrival time                                                  5.04
+
+  clock clk2 (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  read_inst/packet_counter_reg[0]/CP (FD2)                0.00      10.00 r
+  library setup time                                     -0.85       9.15
+  data required time                                                 9.15
+  --------------------------------------------------------------------------
+  data required time                                                 9.15
+  data arrival time                                                 -5.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.11
+
+
+1

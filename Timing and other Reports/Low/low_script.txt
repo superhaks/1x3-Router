@@ -1,0 +1,53 @@
+#Read the design in
+read_file -format verilog {"fifo.v"}
+read_file -format verilog {"write.v"}
+read_file -format verilog {"read.v"}
+read_file -format verilog {"router.v"}
+#set the current design
+set current_design router
+#link the design to the libraries
+link
+#create clock
+create_clock "clk1" -period 4 -name "clk1"
+set_dont_touch_network "clk1"
+create_clock "clk2" -period 10 -name "clk2"
+set_dont_touch_network "clk2"
+#false path
+set_false_path -from clk1 -to clk2
+#specify max/min delays for input/output ports
+set_input_delay -clock clk1 -max -rise 2 "packet_valid_i"
+set_input_delay -clock clk1 -min -rise 1 "packet_valid_i"
+set_input_delay -clock clk1 -max -rise 2 "packet_in"
+set_input_delay -clock clk1 -min -rise 1 "packet_in"
+set_input_delay -clock clk1 -max -rise 2 "rst"
+set_input_delay -clock clk1 -min -rise 1 "rst"
+set_input_delay -clock clk1 -max -rise 2 "clk1"
+set_input_delay -clock clk1 -min -rise 1 "clk1"
+set_input_delay -clock clk2 -max -rise 2 "clk2"
+set_input_delay -clock clk2 -min -rise 1 "clk2"
+set_output_delay -clock clk1 -max -rise 2 "stop_packet_send"
+set_output_delay -clock clk1 -min -rise 1 "stop_packet_send"
+set_output_delay -clock clk2 -max -rise 2 "packet_valid_o1"
+set_output_delay -clock clk2 -min -rise 1 "packet_valid_o1"
+set_output_delay -clock clk2 -max -rise 2 "packet_valid_o2"
+set_output_delay -clock clk2 -min -rise 1 "packet_valid_o2"
+set_output_delay -clock clk2 -max -rise 2 "packet_valid_o3"
+set_output_delay -clock clk2 -min -rise 1 "packet_valid_o3"
+set_output_delay -clock clk2 -max -rise 2 "packet_out1"
+set_output_delay -clock clk2 -min -rise 1 "packet_out1"
+set_output_delay -clock clk2 -max -rise 2 "packet_out2"
+set_output_delay -clock clk2 -min -rise 1 "packet_out2"
+set_output_delay -clock clk2 -max -rise 2 "packet_out3"
+set_output_delay -clock clk2 -min -rise 1 "packet_out3"
+#set area constraint to 0 for optimum area
+set_max_area 0
+#set operating conditions
+set_operating_conditions -library "lsi_10k" "BCCOM"
+#synthesize
+compile -map_effort low -boundary_optimization
+#generate reports
+report_attribute > report_attribute.txt
+report_area > report_area.txt 
+report_constraints -all_violators > report_constraints.txt
+#report_timing -path full -delay max -max_paths 1 -nworst 1 > report_timing.txt
+report_timing > report_timing.txt

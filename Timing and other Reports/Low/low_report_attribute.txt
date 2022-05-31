@@ -1,0 +1,863 @@
+Information: Building the design 'fifo' instantiated from design 'router' with
+	the parameters "DATA_WIDTH=16,DEPTH=2". (HDL-193)
+Warning: Cannot find the design 'fifo' in the library 'WORK'. (LBR-1)
+Information: Building the design 'fifo' instantiated from design 'router' with
+	the parameters "DATA_WIDTH=8,DEPTH=64". (HDL-193)
+Warning: Cannot find the design 'fifo' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'fifo' in 'router'. (LINK-5)
+Warning: Design 'router' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : Attribute
+Design : router
+Version: S-2021.06-SP1
+Date   : Mon May  2 01:14:09 2022
+****************************************
+
+Design          Object             Type      Attribute Name            Value
+--------------------------------------------------------------------------------
+router          router             design    design_voltage_unit       1000.000000
+router          router             design    design_current_unit       0.001000
+router          router             design    design_resistance_unit    10000.000000
+router          router             design    design_cap_unit           0.000100
+router          router             design    design_time_unit          1.000000
+router          router             design    compile_cpu_hostname      ecs-pa-coding1.ecs.csus.edu
+router          router             design    ice_canonical_xor2_delay  0.537872
+router          router             design    ice_canonical_nand2_delay 0.219973
+router          router             design    testdb_meth_sig_usage_option
+                                                                       98307
+router          router             design    testdb_meth_sig_usage     106499
+router          router             design    testdb_meth_name          multiplexed_flip_flop
+router          router             design    map_effort_option         2
+router          router             design    map                       true
+router          router             design    exact_sequential_map      false
+router          router             design    pads_thru_hier            false
+router          router             design    pads_respect_hier         false
+router          router             design    redundancy_removal        true
+router          router             design    instance_name_suffix      
+router          router             design    multibit_mode             non_timing_driven
+router          router             design    compile_tdrs_cpu_time     0.350403
+router          router             design    compile_lib_cpu_time      0.168066
+router          router             design    compile_tot_cpu_time      1.280758
+router          router             design    compile_rbo_cpu_time      0.133802
+router          router             design    compile_abo_cpu_time      0.551743
+router          router             design    compile_tot_wall_time     1.526834
+router          router             design    temperature_from_min_lib  0.000000
+router          router             design    temperature_from_max_lib  0.000000
+router          router             design    max_area                  0.000000
+router          router             design    ungroup_all_option        false
+router          router             design    scan_state_route_serial   false
+router          router             design    scan_state_route_clocks   false
+router          router             design    scan_state_route_enables  false
+router          router             design    scan_state_type           1
+router          router             design    min_wire_load_selection_type
+                                                                       0
+router          router             design    wire_load_selection_type  0
+router          router             design    hdl_library               WORK
+router          router             design    hdl_template              router
+router          router             design    hdl_canonical_default_params
+                                                                       DATA_WIDTH=32'h00000008,TS1=8'h01,TS2=8'h02,TS3=8'h03
+router          router             design    hdl_default_parameters    TS1 => 8'h01, TS2 => 8'h02, TS3 => 8'h03, DATA_WIDTH => 8
+router          router             design    hdl_canonical_params      
+router          router             design    hdl_parameters            
+router          router             design    link_design_libraries     WORK
+router          router             design    presto_gtech_count        12
+router          buff_out_reg[0]    cell      ff_edge_sense             1
+router          buff_out_reg[0]    cell      hdl_instance_name         buff_out_reg[0]
+router          buff_out_reg[1]    cell      ff_edge_sense             1
+router          buff_out_reg[1]    cell      hdl_instance_name         buff_out_reg[1]
+router          buff_out_reg[2]    cell      ff_edge_sense             1
+router          buff_out_reg[2]    cell      hdl_instance_name         buff_out_reg[2]
+router          buff_out_reg[3]    cell      ff_edge_sense             1
+router          buff_out_reg[3]    cell      hdl_instance_name         buff_out_reg[3]
+router          buff_out_reg[4]    cell      ff_edge_sense             1
+router          buff_out_reg[4]    cell      hdl_instance_name         buff_out_reg[4]
+router          buff_out_reg[5]    cell      ff_edge_sense             1
+router          buff_out_reg[5]    cell      hdl_instance_name         buff_out_reg[5]
+router          buff_out_reg[6]    cell      ff_edge_sense             1
+router          buff_out_reg[6]    cell      hdl_instance_name         buff_out_reg[6]
+router          buff_out_reg[7]    cell      ff_edge_sense             1
+router          buff_out_reg[7]    cell      hdl_instance_name         buff_out_reg[7]
+router          fifo1_inst         cell      hdl_instance_name         fifo1_inst
+router          fifo1_inst         cell      array_ref                 0
+router          fifo2_inst         cell      hdl_instance_name         fifo2_inst
+router          fifo2_inst         cell      array_ref                 0
+router          read_inst          cell      hdl_instance_name         read_inst
+router          read_inst          cell      array_ref                 0
+router          write_inst         cell      hdl_instance_name         write_inst
+router          write_inst         cell      array_ref                 0
+router          buff_out[0]        net       net_original_name         buff_out[0]
+router          buff_out[0]        net       three_state               true
+router          buff_out[1]        net       net_original_name         buff_out[1]
+router          buff_out[1]        net       three_state               true
+router          buff_out[2]        net       net_original_name         buff_out[2]
+router          buff_out[2]        net       three_state               true
+router          buff_out[3]        net       net_original_name         buff_out[3]
+router          buff_out[3]        net       three_state               true
+router          buff_out[4]        net       net_original_name         buff_out[4]
+router          buff_out[4]        net       three_state               true
+router          buff_out[5]        net       net_original_name         buff_out[5]
+router          buff_out[5]        net       three_state               true
+router          buff_out[6]        net       net_original_name         buff_out[6]
+router          buff_out[6]        net       three_state               true
+router          buff_out[7]        net       net_original_name         buff_out[7]
+router          buff_out[7]        net       three_state               true
+router          clk1               net       net_original_name         clk1
+router          clk1               net       three_state               true
+router          clk2               net       net_original_name         clk2
+router          clk2               net       three_state               true
+router          fifo1_datain[0]    net       net_original_name         fifo1_datain[0]
+router          fifo1_datain[0]    net       three_state               true
+router          fifo1_datain[1]    net       net_original_name         fifo1_datain[1]
+router          fifo1_datain[1]    net       three_state               true
+router          fifo1_datain[2]    net       net_original_name         fifo1_datain[2]
+router          fifo1_datain[2]    net       three_state               true
+router          fifo1_datain[3]    net       net_original_name         fifo1_datain[3]
+router          fifo1_datain[3]    net       three_state               true
+router          fifo1_datain[4]    net       net_original_name         fifo1_datain[4]
+router          fifo1_datain[4]    net       three_state               true
+router          fifo1_datain[5]    net       net_original_name         fifo1_datain[5]
+router          fifo1_datain[5]    net       three_state               true
+router          fifo1_datain[6]    net       net_original_name         fifo1_datain[6]
+router          fifo1_datain[6]    net       three_state               true
+router          fifo1_datain[7]    net       net_original_name         fifo1_datain[7]
+router          fifo1_datain[7]    net       three_state               true
+router          fifo1_datain[8]    net       net_original_name         fifo1_datain[8]
+router          fifo1_datain[8]    net       three_state               true
+router          fifo1_datain[9]    net       net_original_name         fifo1_datain[9]
+router          fifo1_datain[9]    net       three_state               true
+router          fifo1_datain[10]   net       net_original_name         fifo1_datain[10]
+router          fifo1_datain[10]   net       three_state               true
+router          fifo1_datain[11]   net       net_original_name         fifo1_datain[11]
+router          fifo1_datain[11]   net       three_state               true
+router          fifo1_datain[12]   net       net_original_name         fifo1_datain[12]
+router          fifo1_datain[12]   net       three_state               true
+router          fifo1_datain[13]   net       net_original_name         fifo1_datain[13]
+router          fifo1_datain[13]   net       three_state               true
+router          fifo1_datain[14]   net       net_original_name         fifo1_datain[14]
+router          fifo1_datain[14]   net       three_state               true
+router          fifo1_datain[15]   net       net_original_name         fifo1_datain[15]
+router          fifo1_datain[15]   net       three_state               true
+router          fifo1_dataout[0]   net       net_original_name         fifo1_dataout[0]
+router          fifo1_dataout[0]   net       three_state               true
+router          fifo1_dataout[1]   net       net_original_name         fifo1_dataout[1]
+router          fifo1_dataout[1]   net       three_state               true
+router          fifo1_dataout[2]   net       net_original_name         fifo1_dataout[2]
+router          fifo1_dataout[2]   net       three_state               true
+router          fifo1_dataout[3]   net       net_original_name         fifo1_dataout[3]
+router          fifo1_dataout[3]   net       three_state               true
+router          fifo1_dataout[4]   net       net_original_name         fifo1_dataout[4]
+router          fifo1_dataout[4]   net       three_state               true
+router          fifo1_dataout[5]   net       net_original_name         fifo1_dataout[5]
+router          fifo1_dataout[5]   net       three_state               true
+router          fifo1_dataout[6]   net       net_original_name         fifo1_dataout[6]
+router          fifo1_dataout[6]   net       three_state               true
+router          fifo1_dataout[7]   net       net_original_name         fifo1_dataout[7]
+router          fifo1_dataout[7]   net       three_state               true
+router          fifo1_dataout[8]   net       net_original_name         fifo1_dataout[8]
+router          fifo1_dataout[8]   net       three_state               true
+router          fifo1_dataout[9]   net       net_original_name         fifo1_dataout[9]
+router          fifo1_dataout[9]   net       three_state               true
+router          fifo1_dataout[10]  net       net_original_name         fifo1_dataout[10]
+router          fifo1_dataout[10]  net       three_state               true
+router          fifo1_dataout[11]  net       net_original_name         fifo1_dataout[11]
+router          fifo1_dataout[11]  net       three_state               true
+router          fifo1_dataout[12]  net       net_original_name         fifo1_dataout[12]
+router          fifo1_dataout[12]  net       three_state               true
+router          fifo1_dataout[13]  net       net_original_name         fifo1_dataout[13]
+router          fifo1_dataout[13]  net       three_state               true
+router          fifo1_dataout[14]  net       net_original_name         fifo1_dataout[14]
+router          fifo1_dataout[14]  net       three_state               true
+router          fifo1_dataout[15]  net       net_original_name         fifo1_dataout[15]
+router          fifo1_dataout[15]  net       three_state               true
+router          fifo1_empty        net       net_original_name         fifo1_empty
+router          fifo1_empty        net       three_state               true
+router          fifo1_full         net       net_original_name         fifo1_full
+router          fifo1_full         net       three_state               true
+router          fifo1_ren          net       net_original_name         fifo1_ren
+router          fifo1_ren          net       three_state               true
+router          fifo1_wen          net       net_original_name         fifo1_wen
+router          fifo1_wen          net       three_state               true
+router          fifo2_dataout[0]   net       net_original_name         fifo2_dataout[0]
+router          fifo2_dataout[0]   net       three_state               true
+router          fifo2_dataout[1]   net       net_original_name         fifo2_dataout[1]
+router          fifo2_dataout[1]   net       three_state               true
+router          fifo2_dataout[2]   net       net_original_name         fifo2_dataout[2]
+router          fifo2_dataout[2]   net       three_state               true
+router          fifo2_dataout[3]   net       net_original_name         fifo2_dataout[3]
+router          fifo2_dataout[3]   net       three_state               true
+router          fifo2_dataout[4]   net       net_original_name         fifo2_dataout[4]
+router          fifo2_dataout[4]   net       three_state               true
+router          fifo2_dataout[5]   net       net_original_name         fifo2_dataout[5]
+router          fifo2_dataout[5]   net       three_state               true
+router          fifo2_dataout[6]   net       net_original_name         fifo2_dataout[6]
+router          fifo2_dataout[6]   net       three_state               true
+router          fifo2_dataout[7]   net       net_original_name         fifo2_dataout[7]
+router          fifo2_dataout[7]   net       three_state               true
+router          fifo2_empty        net       net_original_name         fifo2_empty
+router          fifo2_empty        net       three_state               true
+router          fifo2_ren          net       net_original_name         fifo2_ren
+router          fifo2_ren          net       three_state               true
+router          fifo2_wen          net       net_original_name         fifo2_wen
+router          fifo2_wen          net       three_state               true
+router          packet_in[0]       net       net_original_name         packet_in[0]
+router          packet_in[1]       net       net_original_name         packet_in[1]
+router          packet_in[2]       net       net_original_name         packet_in[2]
+router          packet_in[3]       net       net_original_name         packet_in[3]
+router          packet_in[4]       net       net_original_name         packet_in[4]
+router          packet_in[5]       net       net_original_name         packet_in[5]
+router          packet_in[6]       net       net_original_name         packet_in[6]
+router          packet_in[7]       net       net_original_name         packet_in[7]
+router          packet_out1[0]     net       net_original_name         packet_out1[0]
+router          packet_out1[1]     net       net_original_name         packet_out1[1]
+router          packet_out1[2]     net       net_original_name         packet_out1[2]
+router          packet_out1[3]     net       net_original_name         packet_out1[3]
+router          packet_out1[4]     net       net_original_name         packet_out1[4]
+router          packet_out1[5]     net       net_original_name         packet_out1[5]
+router          packet_out1[6]     net       net_original_name         packet_out1[6]
+router          packet_out1[7]     net       net_original_name         packet_out1[7]
+router          packet_out2[0]     net       net_original_name         packet_out2[0]
+router          packet_out2[1]     net       net_original_name         packet_out2[1]
+router          packet_out2[2]     net       net_original_name         packet_out2[2]
+router          packet_out2[3]     net       net_original_name         packet_out2[3]
+router          packet_out2[4]     net       net_original_name         packet_out2[4]
+router          packet_out2[5]     net       net_original_name         packet_out2[5]
+router          packet_out2[6]     net       net_original_name         packet_out2[6]
+router          packet_out2[7]     net       net_original_name         packet_out2[7]
+router          packet_out3[0]     net       net_original_name         packet_out3[0]
+router          packet_out3[1]     net       net_original_name         packet_out3[1]
+router          packet_out3[2]     net       net_original_name         packet_out3[2]
+router          packet_out3[3]     net       net_original_name         packet_out3[3]
+router          packet_out3[4]     net       net_original_name         packet_out3[4]
+router          packet_out3[5]     net       net_original_name         packet_out3[5]
+router          packet_out3[6]     net       net_original_name         packet_out3[6]
+router          packet_out3[7]     net       net_original_name         packet_out3[7]
+router          packet_valid_i     net       net_original_name         packet_valid_i
+router          packet_valid_o1    net       net_original_name         packet_valid_o1
+router          packet_valid_o2    net       net_original_name         packet_valid_o2
+router          packet_valid_o3    net       net_original_name         packet_valid_o3
+router          rst                net       net_original_name         rst
+router          rst                net       three_state               true
+router          stop_packet_send   net       net_original_name         stop_packet_send
+router          read_inst/clk      net       three_state               true
+router          read_inst/fifo1_datain[2]
+                                   net       three_state               true
+router          read_inst/fifo1_datain[3]
+                                   net       three_state               true
+router          read_inst/fifo1_datain[4]
+                                   net       three_state               true
+router          read_inst/fifo1_datain[5]
+                                   net       three_state               true
+router          read_inst/fifo1_datain[6]
+                                   net       three_state               true
+router          read_inst/fifo1_datain[7]
+                                   net       three_state               true
+router          read_inst/fifo1_datain[8]
+                                   net       three_state               true
+router          read_inst/fifo1_datain[9]
+                                   net       three_state               true
+router          read_inst/fifo1_datain[10]
+                                   net       three_state               true
+router          read_inst/fifo1_datain[11]
+                                   net       three_state               true
+router          read_inst/fifo1_datain[12]
+                                   net       three_state               true
+router          read_inst/fifo1_datain[13]
+                                   net       three_state               true
+router          read_inst/fifo1_datain[14]
+                                   net       three_state               true
+router          read_inst/fifo1_datain[15]
+                                   net       three_state               true
+router          read_inst/fifo1_empty
+                                   net       three_state               true
+router          read_inst/fifo1_ren
+                                   net       three_state               true
+router          read_inst/packet_datain[0]
+                                   net       three_state               true
+router          read_inst/packet_datain[1]
+                                   net       three_state               true
+router          read_inst/packet_datain[2]
+                                   net       three_state               true
+router          read_inst/packet_datain[3]
+                                   net       three_state               true
+router          read_inst/packet_datain[4]
+                                   net       three_state               true
+router          read_inst/packet_datain[5]
+                                   net       three_state               true
+router          read_inst/packet_datain[6]
+                                   net       three_state               true
+router          read_inst/packet_datain[7]
+                                   net       three_state               true
+router          read_inst/packet_empty
+                                   net       three_state               true
+router          read_inst/packet_ren
+                                   net       three_state               true
+router          read_inst/rst      net       three_state               true
+router          write_inst/N54     net       three_state               true
+router          write_inst/N55     net       three_state               true
+router          write_inst/add_97/carry[3]
+                                   net       three_state               true
+router          write_inst/buff_out[3]
+                                   net       three_state               true
+router          write_inst/buff_out[4]
+                                   net       three_state               true
+router          write_inst/buff_out[5]
+                                   net       three_state               true
+router          write_inst/buff_out[6]
+                                   net       three_state               true
+router          write_inst/buff_out[7]
+                                   net       three_state               true
+router          write_inst/clk     net       three_state               true
+router          write_inst/fifo1_datain[0]
+                                   net       three_state               true
+router          write_inst/fifo1_datain[1]
+                                   net       three_state               true
+router          write_inst/fifo1_datain[2]
+                                   net       three_state               true
+router          write_inst/fifo1_datain[3]
+                                   net       three_state               true
+router          write_inst/fifo1_datain[4]
+                                   net       three_state               true
+router          write_inst/fifo1_datain[5]
+                                   net       three_state               true
+router          write_inst/fifo1_datain[6]
+                                   net       three_state               true
+router          write_inst/fifo1_datain[7]
+                                   net       three_state               true
+router          write_inst/fifo1_datain[8]
+                                   net       three_state               true
+router          write_inst/fifo1_datain[9]
+                                   net       three_state               true
+router          write_inst/fifo1_datain[10]
+                                   net       three_state               true
+router          write_inst/fifo1_datain[11]
+                                   net       three_state               true
+router          write_inst/fifo1_datain[12]
+                                   net       three_state               true
+router          write_inst/fifo1_datain[13]
+                                   net       three_state               true
+router          write_inst/fifo1_datain[14]
+                                   net       three_state               true
+router          write_inst/fifo1_datain[15]
+                                   net       three_state               true
+router          write_inst/fifo1_full
+                                   net       three_state               true
+router          write_inst/fifo1_wen
+                                   net       three_state               true
+router          write_inst/fifo2_wen
+                                   net       three_state               true
+router          write_inst/rst     net       three_state               true
+router          buff_out_reg[0]/CP pin       pin_on_clock_network_per_scn
+                                                                       true
+router          buff_out_reg[1]/CP pin       pin_on_clock_network_per_scn
+                                                                       true
+router          buff_out_reg[2]/CP pin       pin_on_clock_network_per_scn
+                                                                       true
+router          buff_out_reg[3]/CP pin       pin_on_clock_network_per_scn
+                                                                       true
+router          buff_out_reg[4]/CP pin       pin_on_clock_network_per_scn
+                                                                       true
+router          buff_out_reg[5]/CP pin       pin_on_clock_network_per_scn
+                                                                       true
+router          buff_out_reg[6]/CP pin       pin_on_clock_network_per_scn
+                                                                       true
+router          buff_out_reg[7]/CP pin       pin_on_clock_network_per_scn
+                                                                       true
+router          read_inst/clk      pin       pin_on_clock_network_per_scn
+                                                                       true
+router          write_inst/clk     pin       pin_on_clock_network_per_scn
+                                                                       true
+router          fifo2_inst/read_clk
+                                   pin       pin_on_clock_network_per_scn
+                                                                       true
+router          fifo1_inst/read_clk
+                                   pin       pin_on_clock_network_per_scn
+                                                                       true
+router          fifo2_inst/write_clk
+                                   pin       pin_on_clock_network_per_scn
+                                                                       true
+router          fifo1_inst/write_clk
+                                   pin       pin_on_clock_network_per_scn
+                                                                       true
+router          read_inst/select_output_reg_reg[1]/CP
+                                   pin       pin_on_clock_network_per_scn
+                                                                       true
+router          read_inst/select_output_reg_reg[0]/CP
+                                   pin       pin_on_clock_network_per_scn
+                                                                       true
+router          read_inst/packet_counter_reg[7]/CP
+                                   pin       pin_on_clock_network_per_scn
+                                                                       true
+router          read_inst/packet_counter_reg[0]/CP
+                                   pin       pin_on_clock_network_per_scn
+                                                                       true
+router          read_inst/packet_counter_reg[1]/CP
+                                   pin       pin_on_clock_network_per_scn
+                                                                       true
+router          read_inst/packet_counter_reg[2]/CP
+                                   pin       pin_on_clock_network_per_scn
+                                                                       true
+router          read_inst/packet_counter_reg[3]/CP
+                                   pin       pin_on_clock_network_per_scn
+                                                                       true
+router          read_inst/packet_counter_reg[4]/CP
+                                   pin       pin_on_clock_network_per_scn
+                                                                       true
+router          read_inst/packet_counter_reg[5]/CP
+                                   pin       pin_on_clock_network_per_scn
+                                                                       true
+router          read_inst/cs_reg[0]/CP
+                                   pin       pin_on_clock_network_per_scn
+                                                                       true
+router          read_inst/cs_reg[1]/CP
+                                   pin       pin_on_clock_network_per_scn
+                                                                       true
+router          write_inst/cs_reg[0]/CP
+                                   pin       pin_on_clock_network_per_scn
+                                                                       true
+router          write_inst/cs_reg[1]/CP
+                                   pin       pin_on_clock_network_per_scn
+                                                                       true
+router          write_inst/data_counter_reg[2]/CP
+                                   pin       pin_on_clock_network_per_scn
+                                                                       true
+router          write_inst/data_counter_reg[1]/CP
+                                   pin       pin_on_clock_network_per_scn
+                                                                       true
+router          write_inst/data_counter_reg[0]/CP
+                                   pin       pin_on_clock_network_per_scn
+                                                                       true
+router          read_inst/clear_packet_count_reg
+                                   cell      hdl_instance_name         clear_packet_count_reg
+router          read_inst/cs_reg[0]
+                                   cell      ff_edge_sense             1
+router          read_inst/cs_reg[0]
+                                   cell      hdl_instance_name         cs_reg[0]
+router          read_inst/cs_reg[1]
+                                   cell      ff_edge_sense             1
+router          read_inst/cs_reg[1]
+                                   cell      hdl_instance_name         cs_reg[1]
+router          read_inst/cs_reg[2]
+                                   cell      ff_edge_sense             1
+router          read_inst/cs_reg[2]
+                                   cell      hdl_instance_name         cs_reg[2]
+router          read_inst/fifo1_ren_reg
+                                   cell      hdl_instance_name         fifo1_ren_reg
+router          read_inst/load_packet_count_reg
+                                   cell      hdl_instance_name         load_packet_count_reg
+router          read_inst/packet_counter_reg[0]
+                                   cell      ff_edge_sense             1
+router          read_inst/packet_counter_reg[0]
+                                   cell      hdl_instance_name         packet_counter_reg[0]
+router          read_inst/packet_counter_reg[1]
+                                   cell      ff_edge_sense             1
+router          read_inst/packet_counter_reg[1]
+                                   cell      hdl_instance_name         packet_counter_reg[1]
+router          read_inst/packet_counter_reg[2]
+                                   cell      ff_edge_sense             1
+router          read_inst/packet_counter_reg[2]
+                                   cell      hdl_instance_name         packet_counter_reg[2]
+router          read_inst/packet_counter_reg[3]
+                                   cell      ff_edge_sense             1
+router          read_inst/packet_counter_reg[3]
+                                   cell      hdl_instance_name         packet_counter_reg[3]
+router          read_inst/packet_counter_reg[4]
+                                   cell      ff_edge_sense             1
+router          read_inst/packet_counter_reg[4]
+                                   cell      hdl_instance_name         packet_counter_reg[4]
+router          read_inst/packet_counter_reg[5]
+                                   cell      ff_edge_sense             1
+router          read_inst/packet_counter_reg[5]
+                                   cell      hdl_instance_name         packet_counter_reg[5]
+router          read_inst/packet_counter_reg[6]
+                                   cell      ff_edge_sense             1
+router          read_inst/packet_counter_reg[6]
+                                   cell      hdl_instance_name         packet_counter_reg[6]
+router          read_inst/packet_counter_reg[7]
+                                   cell      ff_edge_sense             1
+router          read_inst/packet_counter_reg[7]
+                                   cell      hdl_instance_name         packet_counter_reg[7]
+router          read_inst/packet_dec_en_reg
+                                   cell      hdl_instance_name         packet_dec_en_reg
+router          read_inst/packet_ren_reg
+                                   cell      hdl_instance_name         packet_ren_reg
+router          read_inst/packet_valid_reg
+                                   cell      hdl_instance_name         packet_valid_reg
+router          read_inst/select_output_reg[0]
+                                   cell      hdl_instance_name         select_output_reg[0]
+router          read_inst/select_output_reg[1]
+                                   cell      hdl_instance_name         select_output_reg[1]
+router          read_inst/select_output_reg_reg[0]
+                                   cell      ff_edge_sense             1
+router          read_inst/select_output_reg_reg[0]
+                                   cell      hdl_instance_name         select_output_reg_reg[0]
+router          read_inst/select_output_reg_reg[1]
+                                   cell      ff_edge_sense             1
+router          read_inst/select_output_reg_reg[1]
+                                   cell      hdl_instance_name         select_output_reg_reg[1]
+router          read_inst/temp_packet_data_reg[0]
+                                   cell      hdl_instance_name         temp_packet_data_reg[0]
+router          read_inst/temp_packet_data_reg[1]
+                                   cell      hdl_instance_name         temp_packet_data_reg[1]
+router          read_inst/temp_packet_data_reg[2]
+                                   cell      hdl_instance_name         temp_packet_data_reg[2]
+router          read_inst/temp_packet_data_reg[3]
+                                   cell      hdl_instance_name         temp_packet_data_reg[3]
+router          read_inst/temp_packet_data_reg[4]
+                                   cell      hdl_instance_name         temp_packet_data_reg[4]
+router          read_inst/temp_packet_data_reg[5]
+                                   cell      hdl_instance_name         temp_packet_data_reg[5]
+router          read_inst/temp_packet_data_reg[6]
+                                   cell      hdl_instance_name         temp_packet_data_reg[6]
+router          read_inst/temp_packet_data_reg[7]
+                                   cell      hdl_instance_name         temp_packet_data_reg[7]
+router          write_inst/clear_data_count_reg
+                                   cell      hdl_instance_name         clear_data_count_reg
+router          write_inst/cs_reg[0]
+                                   cell      ff_edge_sense             1
+router          write_inst/cs_reg[0]
+                                   cell      hdl_instance_name         cs_reg[0]
+router          write_inst/cs_reg[1]
+                                   cell      ff_edge_sense             1
+router          write_inst/cs_reg[1]
+                                   cell      hdl_instance_name         cs_reg[1]
+router          write_inst/cs_reg[2]
+                                   cell      ff_edge_sense             1
+router          write_inst/cs_reg[2]
+                                   cell      hdl_instance_name         cs_reg[2]
+router          write_inst/data_counter_reg[0]
+                                   cell      ff_edge_sense             1
+router          write_inst/data_counter_reg[0]
+                                   cell      hdl_instance_name         data_counter_reg[0]
+router          write_inst/data_counter_reg[1]
+                                   cell      ff_edge_sense             1
+router          write_inst/data_counter_reg[1]
+                                   cell      hdl_instance_name         data_counter_reg[1]
+router          write_inst/data_counter_reg[2]
+                                   cell      ff_edge_sense             1
+router          write_inst/data_counter_reg[2]
+                                   cell      hdl_instance_name         data_counter_reg[2]
+router          write_inst/fifo1_datain_reg[0]
+                                   cell      hdl_instance_name         fifo1_datain_reg[0]
+router          write_inst/fifo1_datain_reg[1]
+                                   cell      hdl_instance_name         fifo1_datain_reg[1]
+router          write_inst/fifo1_datain_reg[2]
+                                   cell      hdl_instance_name         fifo1_datain_reg[2]
+router          write_inst/fifo1_datain_reg[3]
+                                   cell      hdl_instance_name         fifo1_datain_reg[3]
+router          write_inst/fifo1_datain_reg[4]
+                                   cell      hdl_instance_name         fifo1_datain_reg[4]
+router          write_inst/fifo1_datain_reg[5]
+                                   cell      hdl_instance_name         fifo1_datain_reg[5]
+router          write_inst/fifo1_datain_reg[6]
+                                   cell      hdl_instance_name         fifo1_datain_reg[6]
+router          write_inst/fifo1_datain_reg[7]
+                                   cell      hdl_instance_name         fifo1_datain_reg[7]
+router          write_inst/fifo1_datain_reg[8]
+                                   cell      hdl_instance_name         fifo1_datain_reg[8]
+router          write_inst/fifo1_datain_reg[9]
+                                   cell      hdl_instance_name         fifo1_datain_reg[9]
+router          write_inst/fifo1_datain_reg[10]
+                                   cell      hdl_instance_name         fifo1_datain_reg[10]
+router          write_inst/fifo1_datain_reg[11]
+                                   cell      hdl_instance_name         fifo1_datain_reg[11]
+router          write_inst/fifo1_datain_reg[12]
+                                   cell      hdl_instance_name         fifo1_datain_reg[12]
+router          write_inst/fifo1_datain_reg[13]
+                                   cell      hdl_instance_name         fifo1_datain_reg[13]
+router          write_inst/fifo1_datain_reg[14]
+                                   cell      hdl_instance_name         fifo1_datain_reg[14]
+router          write_inst/fifo1_datain_reg[15]
+                                   cell      hdl_instance_name         fifo1_datain_reg[15]
+router          write_inst/fifo1_valid_reg
+                                   cell      hdl_instance_name         fifo1_valid_reg
+router          write_inst/fifo1_wen_reg
+                                   cell      hdl_instance_name         fifo1_wen_reg
+router          write_inst/fifo2_wen_reg
+                                   cell      hdl_instance_name         fifo2_wen_reg
+router          write_inst/load_data_count_reg
+                                   cell      hdl_instance_name         load_data_count_reg
+router          write_inst/stop_packet_reg
+                                   cell      hdl_instance_name         stop_packet_reg
+router          write_inst/temp_fifo1_reg[0]
+                                   cell      hdl_instance_name         temp_fifo1_reg[0]
+router          write_inst/temp_fifo1_reg[1]
+                                   cell      hdl_instance_name         temp_fifo1_reg[1]
+router          write_inst/temp_fifo1_reg[2]
+                                   cell      hdl_instance_name         temp_fifo1_reg[2]
+router          write_inst/temp_fifo1_reg[3]
+                                   cell      hdl_instance_name         temp_fifo1_reg[3]
+router          write_inst/temp_fifo1_reg[4]
+                                   cell      hdl_instance_name         temp_fifo1_reg[4]
+router          write_inst/temp_fifo1_reg[5]
+                                   cell      hdl_instance_name         temp_fifo1_reg[5]
+router          write_inst/temp_fifo1_reg[6]
+                                   cell      hdl_instance_name         temp_fifo1_reg[6]
+router          write_inst/temp_fifo1_reg[7]
+                                   cell      hdl_instance_name         temp_fifo1_reg[7]
+router          read_inst/N30      net       net_original_name         SUM(1)
+router          read_inst/N32      net       net_original_name         SUM(3)
+router          read_inst/N34      net       net_original_name         SUM(5)
+router          read_inst/N35      net       net_original_name         SUM(6)
+router          read_inst/N36      net       net_original_name         SUM(7)
+router          read_inst/clk      net       net_original_name         clk
+router          read_inst/fifo1_datain[2]
+                                   net       net_original_name         fifo1_datain[2]
+router          read_inst/fifo1_datain[3]
+                                   net       net_original_name         fifo1_datain[3]
+router          read_inst/fifo1_datain[4]
+                                   net       net_original_name         fifo1_datain[4]
+router          read_inst/fifo1_datain[5]
+                                   net       net_original_name         fifo1_datain[5]
+router          read_inst/fifo1_datain[6]
+                                   net       net_original_name         fifo1_datain[6]
+router          read_inst/fifo1_datain[7]
+                                   net       net_original_name         fifo1_datain[7]
+router          read_inst/fifo1_datain[8]
+                                   net       net_original_name         fifo1_datain[8]
+router          read_inst/fifo1_datain[9]
+                                   net       net_original_name         fifo1_datain[9]
+router          read_inst/fifo1_datain[10]
+                                   net       net_original_name         fifo1_datain[10]
+router          read_inst/fifo1_datain[11]
+                                   net       net_original_name         fifo1_datain[11]
+router          read_inst/fifo1_datain[12]
+                                   net       net_original_name         fifo1_datain[12]
+router          read_inst/fifo1_datain[13]
+                                   net       net_original_name         fifo1_datain[13]
+router          read_inst/fifo1_datain[14]
+                                   net       net_original_name         fifo1_datain[14]
+router          read_inst/fifo1_datain[15]
+                                   net       net_original_name         fifo1_datain[15]
+router          read_inst/fifo1_empty
+                                   net       net_original_name         fifo1_empty
+router          read_inst/fifo1_ren
+                                   net       net_original_name         fifo1_ren
+router          read_inst/ns[0]    net       net_original_name         ns[0]
+router          read_inst/ns[1]    net       net_original_name         ns[1]
+router          read_inst/ns[2]    net       net_original_name         ns[2]
+router          read_inst/packet_counter[0]
+                                   net       net_original_name         packet_counter[0]
+router          read_inst/packet_counter[1]
+                                   net       net_original_name         packet_counter[1]
+router          read_inst/packet_counter[2]
+                                   net       net_original_name         packet_counter[2]
+router          read_inst/packet_counter[3]
+                                   net       net_original_name         packet_counter[3]
+router          read_inst/packet_counter[4]
+                                   net       net_original_name         packet_counter[4]
+router          read_inst/packet_counter[6]
+                                   net       net_original_name         packet_counter[6]
+router          read_inst/packet_counter[7]
+                                   net       net_original_name         packet_counter[7]
+router          read_inst/packet_datain[0]
+                                   net       net_original_name         packet_datain[0]
+router          read_inst/packet_datain[1]
+                                   net       net_original_name         packet_datain[1]
+router          read_inst/packet_datain[2]
+                                   net       net_original_name         packet_datain[2]
+router          read_inst/packet_datain[3]
+                                   net       net_original_name         packet_datain[3]
+router          read_inst/packet_datain[4]
+                                   net       net_original_name         packet_datain[4]
+router          read_inst/packet_datain[5]
+                                   net       net_original_name         packet_datain[5]
+router          read_inst/packet_datain[6]
+                                   net       net_original_name         packet_datain[6]
+router          read_inst/packet_datain[7]
+                                   net       net_original_name         packet_datain[7]
+router          read_inst/packet_empty
+                                   net       net_original_name         packet_empty
+router          read_inst/packet_output_1[0]
+                                   net       net_original_name         packet_output_1[0]
+router          read_inst/packet_output_1[1]
+                                   net       net_original_name         packet_output_1[1]
+router          read_inst/packet_output_1[2]
+                                   net       net_original_name         packet_output_1[2]
+router          read_inst/packet_output_1[3]
+                                   net       net_original_name         packet_output_1[3]
+router          read_inst/packet_output_1[4]
+                                   net       net_original_name         packet_output_1[4]
+router          read_inst/packet_output_1[5]
+                                   net       net_original_name         packet_output_1[5]
+router          read_inst/packet_output_1[6]
+                                   net       net_original_name         packet_output_1[6]
+router          read_inst/packet_output_1[7]
+                                   net       net_original_name         packet_output_1[7]
+router          read_inst/packet_output_2[0]
+                                   net       net_original_name         packet_output_2[0]
+router          read_inst/packet_output_2[1]
+                                   net       net_original_name         packet_output_2[1]
+router          read_inst/packet_output_2[2]
+                                   net       net_original_name         packet_output_2[2]
+router          read_inst/packet_output_2[3]
+                                   net       net_original_name         packet_output_2[3]
+router          read_inst/packet_output_2[4]
+                                   net       net_original_name         packet_output_2[4]
+router          read_inst/packet_output_2[5]
+                                   net       net_original_name         packet_output_2[5]
+router          read_inst/packet_output_2[6]
+                                   net       net_original_name         packet_output_2[6]
+router          read_inst/packet_output_2[7]
+                                   net       net_original_name         packet_output_2[7]
+router          read_inst/packet_output_3[0]
+                                   net       net_original_name         packet_output_3[0]
+router          read_inst/packet_output_3[1]
+                                   net       net_original_name         packet_output_3[1]
+router          read_inst/packet_output_3[2]
+                                   net       net_original_name         packet_output_3[2]
+router          read_inst/packet_output_3[3]
+                                   net       net_original_name         packet_output_3[3]
+router          read_inst/packet_output_3[4]
+                                   net       net_original_name         packet_output_3[4]
+router          read_inst/packet_output_3[5]
+                                   net       net_original_name         packet_output_3[5]
+router          read_inst/packet_output_3[6]
+                                   net       net_original_name         packet_output_3[6]
+router          read_inst/packet_output_3[7]
+                                   net       net_original_name         packet_output_3[7]
+router          read_inst/packet_ren
+                                   net       net_original_name         packet_ren
+router          read_inst/packet_valid_o1
+                                   net       net_original_name         packet_valid_o1
+router          read_inst/packet_valid_o2
+                                   net       net_original_name         packet_valid_o2
+router          read_inst/packet_valid_o3
+                                   net       net_original_name         packet_valid_o3
+router          read_inst/rst      net       net_original_name         rst
+router          read_inst/select_output[0]
+                                   net       net_original_name         select_output[0]
+router          read_inst/select_output[1]
+                                   net       net_original_name         select_output[1]
+router          read_inst/select_output_reg[0]
+                                   net       net_original_name         select_output_reg[0]
+router          read_inst/select_output_reg[1]
+                                   net       net_original_name         select_output_reg[1]
+router          write_inst/N54     net       net_original_name         SUM(0)
+router          write_inst/N55     net       net_original_name         SUM(1)
+router          write_inst/N57     net       net_original_name         SUM(3)
+router          write_inst/N58     net       net_original_name         SUM(4)
+router          write_inst/N59     net       net_original_name         SUM(5)
+router          write_inst/N60     net       net_original_name         SUM(6)
+router          write_inst/N61     net       net_original_name         SUM(7)
+router          write_inst/add_97/carry[3]
+                                   net       net_original_name         carry(3)
+router          write_inst/add_97/carry[4]
+                                   net       net_original_name         carry(4)
+router          write_inst/add_97/carry[5]
+                                   net       net_original_name         carry(5)
+router          write_inst/add_97/carry[6]
+                                   net       net_original_name         carry(6)
+router          write_inst/add_97/carry[7]
+                                   net       net_original_name         carry(7)
+router          write_inst/buff_out[3]
+                                   net       net_original_name         buff_out[3]
+router          write_inst/buff_out[4]
+                                   net       net_original_name         buff_out[4]
+router          write_inst/buff_out[5]
+                                   net       net_original_name         buff_out[5]
+router          write_inst/buff_out[6]
+                                   net       net_original_name         buff_out[6]
+router          write_inst/buff_out[7]
+                                   net       net_original_name         buff_out[7]
+router          write_inst/clk     net       net_original_name         clk
+router          write_inst/fifo1_datain[0]
+                                   net       net_original_name         fifo1_datain[0]
+router          write_inst/fifo1_datain[1]
+                                   net       net_original_name         fifo1_datain[1]
+router          write_inst/fifo1_datain[2]
+                                   net       net_original_name         fifo1_datain[2]
+router          write_inst/fifo1_datain[3]
+                                   net       net_original_name         fifo1_datain[3]
+router          write_inst/fifo1_datain[4]
+                                   net       net_original_name         fifo1_datain[4]
+router          write_inst/fifo1_datain[5]
+                                   net       net_original_name         fifo1_datain[5]
+router          write_inst/fifo1_datain[6]
+                                   net       net_original_name         fifo1_datain[6]
+router          write_inst/fifo1_datain[7]
+                                   net       net_original_name         fifo1_datain[7]
+router          write_inst/fifo1_datain[8]
+                                   net       net_original_name         fifo1_datain[8]
+router          write_inst/fifo1_datain[9]
+                                   net       net_original_name         fifo1_datain[9]
+router          write_inst/fifo1_datain[10]
+                                   net       net_original_name         fifo1_datain[10]
+router          write_inst/fifo1_datain[11]
+                                   net       net_original_name         fifo1_datain[11]
+router          write_inst/fifo1_datain[12]
+                                   net       net_original_name         fifo1_datain[12]
+router          write_inst/fifo1_datain[13]
+                                   net       net_original_name         fifo1_datain[13]
+router          write_inst/fifo1_datain[14]
+                                   net       net_original_name         fifo1_datain[14]
+router          write_inst/fifo1_datain[15]
+                                   net       net_original_name         fifo1_datain[15]
+router          write_inst/fifo1_full
+                                   net       net_original_name         fifo1_full
+router          write_inst/fifo1_wen
+                                   net       net_original_name         fifo1_wen
+router          write_inst/fifo2_wen
+                                   net       net_original_name         fifo2_wen
+router          write_inst/ns[0]   net       net_original_name         ns[0]
+router          write_inst/ns[1]   net       net_original_name         ns[1]
+router          write_inst/ns[2]   net       net_original_name         ns[2]
+router          write_inst/packet_valid
+                                   net       net_original_name         packet_valid
+router          write_inst/rst     net       net_original_name         rst
+router          write_inst/stop_packet
+                                   net       net_original_name         stop_packet
+router          clk1               port      pin_on_clock_network_per_scn
+                                                                       true
+router          clk1               port      hdl_instance_name         clk1
+router          clk2               port      pin_on_clock_network_per_scn
+                                                                       true
+router          clk2               port      hdl_instance_name         clk2
+router          packet_in[0]       port      hdl_instance_name         packet_in[0]
+router          packet_in[1]       port      hdl_instance_name         packet_in[1]
+router          packet_in[2]       port      hdl_instance_name         packet_in[2]
+router          packet_in[3]       port      hdl_instance_name         packet_in[3]
+router          packet_in[4]       port      hdl_instance_name         packet_in[4]
+router          packet_in[5]       port      hdl_instance_name         packet_in[5]
+router          packet_in[6]       port      hdl_instance_name         packet_in[6]
+router          packet_in[7]       port      hdl_instance_name         packet_in[7]
+router          packet_out1[0]     port      hdl_instance_name         packet_out1[0]
+router          packet_out1[1]     port      hdl_instance_name         packet_out1[1]
+router          packet_out1[2]     port      hdl_instance_name         packet_out1[2]
+router          packet_out1[3]     port      hdl_instance_name         packet_out1[3]
+router          packet_out1[4]     port      hdl_instance_name         packet_out1[4]
+router          packet_out1[5]     port      hdl_instance_name         packet_out1[5]
+router          packet_out1[6]     port      hdl_instance_name         packet_out1[6]
+router          packet_out1[7]     port      hdl_instance_name         packet_out1[7]
+router          packet_out2[0]     port      hdl_instance_name         packet_out2[0]
+router          packet_out2[1]     port      hdl_instance_name         packet_out2[1]
+router          packet_out2[2]     port      hdl_instance_name         packet_out2[2]
+router          packet_out2[3]     port      hdl_instance_name         packet_out2[3]
+router          packet_out2[4]     port      hdl_instance_name         packet_out2[4]
+router          packet_out2[5]     port      hdl_instance_name         packet_out2[5]
+router          packet_out2[6]     port      hdl_instance_name         packet_out2[6]
+router          packet_out2[7]     port      hdl_instance_name         packet_out2[7]
+router          packet_out3[0]     port      hdl_instance_name         packet_out3[0]
+router          packet_out3[1]     port      hdl_instance_name         packet_out3[1]
+router          packet_out3[2]     port      hdl_instance_name         packet_out3[2]
+router          packet_out3[3]     port      hdl_instance_name         packet_out3[3]
+router          packet_out3[4]     port      hdl_instance_name         packet_out3[4]
+router          packet_out3[5]     port      hdl_instance_name         packet_out3[5]
+router          packet_out3[6]     port      hdl_instance_name         packet_out3[6]
+router          packet_out3[7]     port      hdl_instance_name         packet_out3[7]
+router          packet_valid_i     port      hdl_instance_name         packet_valid_i
+router          packet_valid_o1    port      hdl_instance_name         packet_valid_o1
+router          packet_valid_o2    port      hdl_instance_name         packet_valid_o2
+router          packet_valid_o3    port      hdl_instance_name         packet_valid_o3
+router          rst                port      hdl_instance_name         rst
+router          stop_packet_send   port      hdl_instance_name         stop_packet_send
+router          fifo               reference hdl_parameter_types       
+router          fifo               reference hdl_canonical_params      DATA_WIDTH=32'h00000010,DEPTH=32'h00000002
+router          fifo               reference hdl_parameters            DATA_WIDTH=16,DEPTH=2
+router          fifo               reference hdl_template              fifo
+router          fifo               reference hdl_parameter_types       
+router          fifo               reference hdl_canonical_params      DATA_WIDTH=32'h00000008,DEPTH=32'h00000040
+router          fifo               reference hdl_parameters            DATA_WIDTH=8,DEPTH=64
+router          fifo               reference hdl_template              fifo
+
+1
